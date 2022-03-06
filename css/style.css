@@ -1,0 +1,128 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: auto;
+}
+
+#bottomImg{
+  position: absolute;
+  bottom: 0px;
+  opacity: 0.6;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: -10px;
+  z-index: -5;
+  max-width: 700px;
+}
+
+.hidden{
+  display: none;
+}
+
+#cardOne, #cardTwo{
+  color: rgb(194, 194, 194);
+}
+
+body{
+  background-color: rgb(6, 122, 6);
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 7.5% 92.5%;
+  grid-template-areas: 
+    "header header header"
+    "body1 body2 body3";
+  align-content: center;
+}
+
+h1{
+  grid-area: header;
+  font-size: 5rem;
+  text-shadow: 5px 5px 8px black; 
+  margin: 25px 0;
+}
+
+#player1Section{
+  grid-area: body1;
+}
+
+#player2Section{
+  grid-area: body2;
+}
+
+#controls{
+  grid-area: body3;
+}
+
+button{
+  padding: 10px;
+  font-size: 1.25rem;
+  background-color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 10px 10px;
+}
+
+button:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 100ms;
+  box-shadow: 5px 5px 5px black;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+h4{
+  font-size: 1.5rem;
+}
+
+h2, h1{
+  text-decoration: underline;
+}
+
+#h3{
+  margin: 0 5px;
+  padding: 0;
+  background-color: rgb(4, 92, 4);
+}
+
+@media screen and (max-width: 700px) {
+  body{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 7.5% 50% 42.5%;
+    grid-template-areas: 
+      "header header"
+      "body1 body2" 
+      "body3 body3";
+  }
+  #h3{
+    margin-top: 20px;
+  }
+  #cardOne, #cardTwo{
+    font-size: 1rem;
+  }
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
