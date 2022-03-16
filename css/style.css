@@ -122,6 +122,9 @@ h2, h1{
   #cardOne, #cardTwo{
     font-size: 1rem;
   }
+  #h1{
+    font-size: 3rem;
+  }
 }
 /******************************************
 /* ADDITIONAL STYLES
