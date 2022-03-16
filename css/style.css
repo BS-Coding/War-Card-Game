@@ -107,7 +107,7 @@ h2, h1{
   background-color: rgb(4, 92, 4);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   body{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 17.5% 45% 37.5%;
@@ -122,7 +122,7 @@ h2, h1{
   #cardOne, #cardTwo{
     font-size: 1rem;
   }
-  #h1{
+  h1{
     font-size: 3rem;
   }
 }
