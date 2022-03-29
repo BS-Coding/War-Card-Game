@@ -226,3 +226,4 @@ async function fightWar(){
 })
 }
 
+console.log("done")
